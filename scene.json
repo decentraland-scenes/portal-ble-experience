@@ -1,0 +1,19 @@
+{
+  "ecs7": true,
+  "runtimeVersion": "7",
+  "display": {
+    "title": "SDK7 Portable Experience Scene Template",
+    "description": "portable experience template scene with SDK7"
+  },
+  "scene": {
+    "parcels": [
+      "0,0"
+    ],
+    "base": "0,0"
+  },
+  "main": "bin/index.js",
+  "isPortableExperience": true,
+	"requiredPermissions": [
+    "ALLOW_TO_MOVE_PLAYER_INSIDE_SCENE"
+  ]
+}

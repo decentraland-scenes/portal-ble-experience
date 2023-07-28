@@ -58,7 +58,7 @@ export function gunSystem(dt: number) {
 				opts: {
 					queryType: RaycastQueryType.RQT_HIT_FIRST,
 					direction: Vector3.rotate(Vector3.Forward(), Transform.get(engine.PlayerEntity).rotation),
-					maxDistance: 30,
+					maxDistance: 90,
 				},
 			},
 			function (raycastResult) {

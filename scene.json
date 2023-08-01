@@ -15,5 +15,8 @@
   "isPortableExperience": true,
 	"requiredPermissions": [
     "ALLOW_TO_MOVE_PLAYER_INSIDE_SCENE"
-  ]
+  ],
+	"worldConfiguration" : {
+    "name": "NicoE.dcl.eth"
+  }
 }

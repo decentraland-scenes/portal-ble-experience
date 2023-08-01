@@ -57,7 +57,7 @@ export function gunSystem(dt: number) {
 				entity: engine.PlayerEntity,
 				opts: {
 					queryType: RaycastQueryType.RQT_HIT_FIRST,
-					direction: Vector3.rotate(Vector3.Forward(), Transform.get(engine.PlayerEntity).rotation),
+					direction: Vector3.rotate(Vector3.Forward(), Transform.get(engine.CameraEntity).rotation),
 					maxDistance: 90,
 				},
 			},
@@ -92,9 +92,15 @@ export function handlePortalRay(result: DeepReadonlyObject<PBRaycastResult>) {
 		}
 
 
+		const playerPosition = Transform.get(engine.PlayerEntity).position
+		const portalPosition = result.hits[0].position
+		const adjustment = Vector3.scale(Vector3.normalize(Vector3.subtract(playerPosition, portalPosition)), 0.05)
+		const adjustedPortalPosition = Vector3.add(portalPosition, adjustment)
+
+
 		// create new portal
 		createPortal(activePortal, {
-			position: result.hits[0].position,
+			position: adjustedPortalPosition,
 			rotation: Quaternion.lookRotation(result.hits[0].normalHit),
 
 			//Quaternion.fromEulerDegrees(result.hit.normalHit.x * 180 / Math.PI, result.hit.normalHit.y * 180 / Math.PI, result.hit.normalHit.z * 180 / Math.PI),
@@ -109,5 +115,4 @@ export function handlePortalRay(result: DeepReadonlyObject<PBRaycastResult>) {
 			loop: false
 		})
 	}
-
 }

@@ -16,15 +16,15 @@ export function main() {
 	engine.addSystem(colorSystem)
 
 
-	const testwall = engine.addEntity()
-	Transform.create(testwall, { position: Vector3.create(7, 1, 6) })
-	MeshRenderer.setPlane(testwall)
-	MeshCollider.setPlane(testwall)
+	//const testwall = engine.addEntity()
+	//Transform.create(testwall, { position: Vector3.create(7, 1, 6) })
+	//MeshRenderer.setPlane(testwall)
+	//MeshCollider.setPlane(testwall)
 
 
-	const testwall2 = engine.addEntity()
-	Transform.create(testwall2, { position: Vector3.create(14, 1, 6) })
-	MeshRenderer.setPlane(testwall2)
-	MeshCollider.setPlane(testwall2)
+	//const testwall2 = engine.addEntity()
+	//Transform.create(testwall2, { position: Vector3.create(14, 1, 6) })
+	//MeshRenderer.setPlane(testwall2)
+	//MeshCollider.setPlane(testwall2)
 
 }

@@ -2,8 +2,8 @@
   "ecs7": true,
   "runtimeVersion": "7",
   "display": {
-    "title": "SDK7 Portable Experience Scene Template",
-    "description": "portable experience template scene with SDK7"
+    "title": "Portal-ble experience",
+    "description": "Shoot wormholes to teleport anywhere. Press E to switch the portal color. Only works on SDK7 scenes."
   },
   "scene": {
     "parcels": [

@@ -12,15 +12,15 @@ const RESET_SIZE = 2 // In meters
 export function createPortal(color: PortalColor, pos: TransformType) {
 	const portal = engine.addEntity()
 	Transform.create(portal, pos)
-	GltfContainer.create(portal, {
-		src: color == PortalColor.Blue ? 'assets/models/portalBlue.glb' : 'assets/models/portalOrange.glb'
-	})
 	Animator.create(portal, {
 		states: [{ clip: 'Expand', name: 'expand', loop: false, shouldReset: true, playing: true }]
 	})
+	AudioSource.createOrReplace(portal, { audioClipUrl: 'sounds/portalSuccess.mp3', playing: true, loop: false })
 	Portal.create(portal, { color: activePortal })
 
-	AudioSource.createOrReplace(portal, { audioClipUrl: 'sounds/portalSuccess.mp3', playing: true, loop: false })
+	GltfContainer.create(portal, {
+		src: color == PortalColor.Blue ? 'assets/models/portalBlue.glb' : 'assets/models/portalOrange.glb'
+	})
 
 	//trigger
 	utils.triggers.addTrigger(

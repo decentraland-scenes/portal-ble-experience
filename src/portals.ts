@@ -13,7 +13,7 @@ export function createPortal(color: PortalColor, pos: TransformType) {
 	const portal = engine.addEntity()
 	Transform.create(portal, pos)
 	Animator.create(portal, {
-		states: [{ clip: 'Expand', name: 'expand', loop: false, shouldReset: true, playing: true }]
+		states: [{ clip: 'Expand', loop: false, shouldReset: true, playing: true }]
 	})
 	AudioSource.createOrReplace(portal, { audioClipUrl: 'sounds/portalSuccess.mp3', playing: true, loop: false })
 	Portal.create(portal, { color: activePortal })

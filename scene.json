@@ -14,7 +14,12 @@
   "main": "bin/index.js",
   "isPortableExperience": true,
 	"requiredPermissions": [
-    "ALLOW_TO_MOVE_PLAYER_INSIDE_SCENE"
+    "ALLOW_TO_TRIGGER_AVATAR_EMOTE",
+    "ALLOW_TO_MOVE_PLAYER_INSIDE_SCENE",
+    "ALLOW_MEDIA_HOSTNAMES"
+  ],
+  "allowedMediaHostnames": [
+    "player.vimeo.com"
   ],
 	"worldConfiguration" : {
     "name": "NicoE.dcl.eth"

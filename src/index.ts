@@ -26,7 +26,7 @@ export function main() {
 	//Transform.create(testwall2, { position: Vector3.create(14, 1, 6) })
 	//MeshRenderer.setPlane(testwall2)
 	//MeshCollider.setPlane(testwall2)
-	createScreen()
+	//createScreen()
 }
 
 

@@ -1,0 +1,31 @@
+{
+	"id": "3aa78dd3-5b87-47dc-a537-bc684d962b4c",
+	"data": {
+		"replaces": [],
+		"hides": [],
+		"tags": [
+			"portal",
+			"gun",
+			"portalGun",
+			"teleport"
+		],
+		"representations": [
+			{
+				"bodyShapes": [
+					"urn:decentraland:off-chain:base-avatars:BaseMale",
+					"urn:decentraland:off-chain:base-avatars:BaseFemale"
+				],
+				"mainFile": "glasses.glb",
+				"contents": [
+					"glasses.glb"
+				],
+				"overrideHides": [],
+				"overrideReplaces": []
+			}
+		],
+		"category": "weapon"
+	},
+	"name": "Portal Gun",
+	"description": "A gun that teleports you to a portal.",
+	"rarity": "mythic"
+}

@@ -110,7 +110,7 @@ export function handlePortalRay(result: DeepReadonlyObject<PBRaycastResult>) {
 		//}
 	} else {
 		AudioSource.createOrReplace(engine.PlayerEntity, {
-			audioClipUrl: 'sounds/portalFail.mp3',
+			audioClipUrl: 'assets/scene/sounds/portalFail.mp3',
 			playing: true,
 			loop: false
 		})

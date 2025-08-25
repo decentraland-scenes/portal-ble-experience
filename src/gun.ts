@@ -32,7 +32,7 @@ export function spawnGun(gun: Entity) {
 	})
 
 
-	AudioSource.createOrReplace(gun, { audioClipUrl: 'sounds/gunPickup.mp3', playing: true, loop: false })
+	AudioSource.createOrReplace(gun, { audioClipUrl: 'assets/scene/sounds/gunPickup.mp3', playing: true, loop: false })
 
 	const gunParent = engine.addEntity()
 	AvatarAttach.create(gunParent, { anchorPointId: AvatarAnchorPointType.AAPT_NAME_TAG })

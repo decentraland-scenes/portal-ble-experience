@@ -15,7 +15,7 @@ export function createPortal(color: PortalColor, pos: TransformType) {
 	Animator.create(portal, {
 		states: [{ clip: 'Expand', loop: false, shouldReset: true, playing: true }]
 	})
-	AudioSource.createOrReplace(portal, { audioClipUrl: 'sounds/portalSuccess.mp3', playing: true, loop: false })
+	AudioSource.createOrReplace(portal, { audioClipUrl: 'assets/scene/sounds/portalSuccess.mp3', playing: true, loop: false })
 	Portal.create(portal, { color: activePortal })
 
 	GltfContainer.create(portal, {
@@ -64,7 +64,7 @@ export function teleport(portalEntity: Entity) {
 			}, DELAY_TIME)
 
 			AudioSource.createOrReplace(destinationEntity, {
-				audioClipUrl: 'sounds/teleport.mp3',
+				audioClipUrl: 'assets/scene/sounds/teleport.mp3',
 				playing: true,
 				loop: false
 			})

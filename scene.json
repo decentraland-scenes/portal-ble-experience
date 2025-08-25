@@ -3,7 +3,8 @@
   "runtimeVersion": "7",
   "display": {
     "title": "Portal-ble experience",
-    "description": "Shoot wormholes to teleport anywhere. Press E to switch the portal color. Only works on SDK7 scenes."
+    "description": "Shoot wormholes to teleport anywhere. Press E to switch the portal color. Only works on SDK7 scenes.",
+    "navmapThumbnail": ""
   },
   "scene": {
     "parcels": [
@@ -13,11 +14,26 @@
   },
   "main": "bin/index.js",
   "isPortableExperience": true,
-	"requiredPermissions": [
+  "requiredPermissions": [
     "ALLOW_TO_TRIGGER_AVATAR_EMOTE",
     "ALLOW_TO_MOVE_PLAYER_INSIDE_SCENE"
   ],
-	"worldConfiguration" : {
-    "name": "NicoE.dcl.eth"
+  "worldConfiguration": {
+    "name": "maximocossetti.dcl.eth"
+  },
+  "contact": {
+    "name": "",
+    "email": ""
+  },
+  "tags": [],
+  "spawnPoints": [],
+  "featureToggles": {
+    "voiceChat": "enabled",
+    "portableExperiences": "enabled"
+  },
+  "skyboxConfig": {},
+  "source": {
+    "origin": "creator-hub",
+    "projectId": "b2be8e16-0e13-45cc-afae-4d6849b260ed"
   }
 }
